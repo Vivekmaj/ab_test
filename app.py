@@ -129,7 +129,7 @@ def main():
 
             lift_percentage = (treatment_samples - control_samples) / control_samples
             st.write(f'Probability of seeing a {lift_perc}% lift:')
-            st.write(str(np.mean((100 * lift_percentage) > lift_perc) * 100) + '%')
+            st.info(str(np.mean((100 * lift_percentage) > lift_perc) * 100) + '%')
 
     if choice == 'Frequentist A/B Test':
 
